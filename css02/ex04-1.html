@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>게시판 만들기(실습)</title>
+    
+        <style>
+            table {
+                width: 900px;
+                text-align: center;
+                /* 4개의 테두리를 각자 정의할 경우 정의되지 않은 테두리는 기본적으로 none 상태다. */
+                border-top: 2px solid #838383;
+                border-bottom: 2px solid #838383;
+
+                border-collapse: collapse;
+            }
+
+            table>thead>tr {
+                background-color: #cfcfcf;
+                border-bottom: solid #838383;
+            }
+
+            table>tbody>tr:hover {background-color: #ffff00;}
+            table>tbody>tr {border-top: dotted;}
+        </style>
+    </head>
+
+    <body>
+
+        <h1>mysite</h1>
+        <h2>게시판</h2>
+        <h3>일반 게시판</h3>
+        <h4>리스트</h4>
+
+        <!-- table border: css 코드 짜기 전 확인용으로 사용 -->
+        <table>
+            <colgroup>
+                <col style="width: 50px;">
+                <col style="width: 450px;">
+                <col style="width: 100px;">
+                <col style="width: 100px;">
+                <col style="width: 100px;">
+                <col style="width: 100px;">
+            </colgroup>
+
+            <!-- 퍼센트로도 표현 가능. 하지만 여러 번 직접 확인하며 조절 필요.
+                가장 불필요한 칸의 수치를 비워놓고 다른 것부터 조절하며 채우는 것도 방법이다.
+            <colgroup>
+                <col style="width: 10%;">
+                <col style="width: 50%;">
+                <col style="width: 10%;">
+                <col style="width: 10%;">
+                <col style="width: 10%;">
+                <col style="width: 10%;">
+            </colgroup> -->
+
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>조회수</th>
+                    <th>작성일</th>
+                    <th>관리</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td>게시판 게시글입니다</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>게시판 게시글입니다</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>게시판 게시글입니다</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>게시판 게시글입니다</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>게시판 게시글입니다</td>
+                    <td>정우성</td>
+                    <td>1232</td>
+                    <td>2021-11-03</td>
+                    <td>삭제</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>

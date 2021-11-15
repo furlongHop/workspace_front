@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>레이아웃</title>
+
+        <link rel="stylesheet" href="./assets/css/mysite.css">
+        <link rel="stylesheet" href="./assets/css/board.css">
+    </head>
+
+    <body>
+
+        <div id="wrap">
+
+            <div id="header" class="clearfix">
+                <h1><a href="">Mysite</a></h1>
+                <ul class="clearfix">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+           
+            <div id="nav">
+                <ul class="clearfix">
+                    <li>입사지원서</li>
+                    <li>게시판</li>
+                    <li>갤러리</li>
+                    <li>방명록</li>
+                </ul>
+            </div>
+    
+            <!-- <contents> -->
+            <div id="contents2" class="clearfix">
+                <div id="aside" class="clearfix">
+                    <h2>게시판</h2>
+
+                    <ul>
+                        <li>일반 게시판</li>
+                        <li>댓글 게시판</li>
+                        <li>첨부 게시판</li>
+                    </ul>
+                </div>
+        
+                <div id="main">
+                    <div id="main-header" class="clearfix">
+                        <h3>일반 게시판</h3>
+                        <ul class="clearfix">
+                            <li>홈</li>
+                            <li>게시판</li>
+                            <li class="last">일반 게시판</li>
+                        </ul>
+                    </div>
+
+                    <!-- form -->
+                    <form action="" method="">
+                        <div class="line">
+                            <label for="boardtype" class="form-txt">게시판 선택</label>
+                            <select id="boardtype" name="board">
+                                <option value="" selected="selected">선택해주세요</option>
+                                <option value="">공지사항</option>
+                                <option value="">일반게시판</option>
+                                <option value="">댓글게시판</option>
+                                <option value="">첨부게시판</option>
+                            </select>
+                        </div>
+                        
+                        <div class="line">
+                            <label for="title" class="form-txt">제목</label>
+                            <input id="title" type="text" class="w-700" placeholder="제목을 입력해 주세요">
+                        </div>
+
+                        <div class="line">
+                            <label for="password" class="form-txt">비밀번호</label>
+                            <input id="password" type="password" placeholder="패스워드를 입력하세요">
+                        </div>
+
+                        <div class="line">
+                            <span class="form-txt">공개범위</span>
+
+                            <!-- <radio> -->
+                            <label for="range-self">본인</label>
+                            <input id="range-self" type="radio" name="range" value="oneself">
+                            <label for="range-login">로그인회원</label>
+                            <input id="range-login" type="radio" name="range" value="login">
+                            <label for="range-freind">친구</label>
+                            <input id="range-freind" type="radio" name="range" value="friend">
+                            <label for="range-all">전체</label>
+                            <input id="range-all" type="radio" name="range" value="all">
+                            <!-- </radio> -->
+                        </div>
+
+                        <div class="line">
+                            <span class="form-txt">허용범위</span>
+
+                            <!-- <checkbox> -->
+                            <label for="comment">댓글허용</label>
+                            <input id="comment" type="checkbox" name="permit" value="comment">
+                            <label for="reply">답글허용</label>
+                            <input id="reply" type="checkbox" name="permit" value="reply">
+                            <label for="good">좋아요허용</label>
+                            <input id="good" type="checkbox" name="permit" value="good">
+                            <!-- </checkbox> -->
+                        </div>
+
+                        <textarea class="full"></textarea>
+
+                        <div class="line">
+                            <span class="form-txt">첨부파일</span>
+                            <input type="file">
+                        </div>
+
+                        <div id="button">
+                            <button type="submit" class="btn">등록</button>
+                            <button type="reset>" class="btn">초기화</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- main -->
+              
+            </div>
+            <!-- contents-->
+                    
+            <div id="footer">
+                Copyright (c) 2021 황지우. All right reserved
+            </div>
+        </div>
+
+    </body>
+</html>

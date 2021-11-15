@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body {font-family: "맑은 고딕"; font-size: 17px;}
+h2 {font-size: 25px;}
+h3 {font-size: 20px;}
+h1 {font-family: "궁서"; font-size: 30px; letter-spacing: 15px;}
+
+.ita {font-style: italic;}
+.bd {font-weight: bold;}
+.b {color: #0000FF;}
+.r {color: #FF0000;}
+.g {color: #00FF00;}
+
+ul {list-style-type: square;}
+ol {list-style-type: none;}
+
+
+/* 5. 주요 국가별 속도 */
+/* ★순서 중요 */
+#tb_speed a:link {color: #000000;} /*a 태그에만 사용 가능 */
+#tb_speed a:visited {color: #000000;} /*a 태그에만 사용 가능 */
+#tb_speed a:hover {color: #0000FF; text-decoration: underline}
+#tb_speed a:active {color: #0000FF; text-decoration: underline;}
+
+tbody tr:hover {background-color: #EDD3ED;}
+th {background-color: #C8EBFA;}
+
+p.t-35 {text-indent: 35px;}
+
+td.be:before {content: "약";}
+td.af:after {content: "(MB/초)";}
+td.rg {text-align: right;}
+
+.line {text-decoration: underline;}
+.up {text-indent: 30px;}
+.n {text-decoration: none;}
+.gray {background-color: rgb(202, 202, 202);}
+

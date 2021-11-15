@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+
+        <style>
+            .box-red {
+                width: 200px;
+                height: 200px;
+                background-color: #ff0000;
+            }
+
+            .box-blue {
+                width: 150px;
+                height: 150px;
+                background-color: #0000FF;
+            }
+
+            span.blue {
+                background-color: #a8ceff;
+                display: inline-block;
+                width: 200px;
+            }
+
+            span {
+                background-color: #80dbeb;
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+
+        <!-- div는 블록 요소라 가로 크기를 조절해도 여전히 한 줄을 차지한다.
+        때문에 div 다음에 오는 문구는 무조건 다음칸에 온다. -->
+        <div class="box-red">
+            CSS에서 div 가로 세로가 어떻게 적용되는지 확인해 보겠습니다.
+        </div>
+        사막의 밤이 오면 얼어붙는 공기가 모래 위 서릿길을 만들고
+        <div class="box-blue">
+            집집마다 울리는 바람 섞인 노래는 우릴 꿈속으로 인도하네
+        </div>
+
+        <!-- p는 문단이라 행간 공백이 존재한다, -->
+        <p class="box-red">
+            css에서 p 가로 세로가 어떻게 적용되는지 확인해 보겠습니다.
+        </p>
+
+        <!-- span은 인라인 형식이라 블록처럼 한 칸을 차지하지 않는다.
+        또한 가로 세로 조절이 되지 않는다.-->
+        <!-- 하지만 style에서 display: inline-block;을 주면 설정이 가능하다. -->
+        <span class="blue">박달곰 타바스코</span>
+        <span>도동개 스콜피온</span>
+
+        <!-- img와 input은 inline 형식이지만 처음부터 inline-block 성질을 갖고 태어났다. -->
+        <img src="./img/jung.jpg">
+        <input type="text" name="uid" value="">
+
+        <!-- block: 한줄 차지, 줄바꿈, 가로세로 조절 가능.
+        inline: 컨텐츠 양만큼만 차지, 줄바꿈X, 가로세로 조절 불가능.
+        inline-block(태생): 컨텐츠 양만큼 차지, 줄바꿈X, 가로세로 조절 가능. -->
+        <a href="https://www.naver.com/">네이버</a>
+    </body>
+
+</html>

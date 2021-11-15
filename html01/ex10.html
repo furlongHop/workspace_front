@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>html5</title>
+    </head>
+
+    <body>
+
+        <!--속성은 순서에 영향을 받지 않는다.-->
+        <!--name: 데이터를 담아 보내는 보따리 이름-->
+        <!--value: 데이터-->
+        <!--action: 데이터를 보내는 위치-->
+        <!--method: 데이터를 보내는 방식-->
+        <!--label for와 id: 화면에 보이는 데이터와 연동하는 링크-->
+        <form action="" method="get">
+            <label for="u-id">아이디:</label>
+            <input type="text" id="u-id" name="uid" placeholder="아이디를 입력하세요."> <br>
+
+            <label for="u-pw">패스워드:</label>
+            <input type="password" id="u-pw" name="upw" placeholder="패스워드를 입력하세요."> <br>
+
+            <label for="PPTV">빱티비:</label>
+            <input type="text" id="PPTV" name="channel" value="JAPPAPTV"> <br> 
+            
+            <input type="file" name="file" value=""> <br>
+
+            <br>
+            <label for="chk-book">독서</label> 
+            <input type="checkbox" id="chk-book" name="hobby" value="book"> <br>
+            <label for="chk-music">음악</label>
+            <input type="checkbox" id="chk-music" name="hobby" value="music"> <br>
+            <label for="chk-trip">여행</label>
+            <input type="checkbox" id="chk-trip" name="hobby" value="trip"> <br>
+
+            <label for="UGL">우정리</label>
+            <input type="checkbox" id="UGL" name="channel" value="PPTV" checked="checked">
+
+            <br>
+            <label for="chk-dog">강아지</label>
+            <input type="checkbox" id="chk-dog" name="pet" value="dog"> <br>
+            <label for="chk-cat">고양이</label>
+            <input type="checkbox" id="chk-cat" name="pet" value="cat"> <br>
+            <label for="chk-bird">새</label>
+            <input type="checkbox" id="chk-bird" name="pet" value="bird"> <br>
+
+            <br>
+            <!--name을 이용해 fruit이라는 한 그룹으로 묶었으므로,
+            하나만 체크할 수 있는 radio의 특성이 발현되었다.(같은 그룹 내)
+            그룹으로 묶지 않을 경우 한 번 클릭하면 radio가 풀리지 않는다.(단독으로 인식)-->
+            <label for="rdo-apple">사과</label>
+            <input type="radio" id="rdo-apple" name="fruit" value="apple"> <br>
+            <label for="rdo-grape">포도</label>
+            <input type="radio" id="rdo-grape" name="fruit" value="grape"> <br>
+            <label for="rdo-orange">오렌지</label>
+            <input type="radio" id="rdo-orange" name="fruit" value="orange"> <br>
+
+            <br>
+            <label for="rdo-1">1월</label>
+            <input type="radio" id="rdo-1" name="month" value="1"> <br>
+            <label for="rdo-2">2월</label>
+            <input type="radio" id="rdo-2" name="month" value="2"> <br>
+            <label for="rdo-3">3월</label>
+            <input type="radio" id="rdo-3" name="month" value="3"> <br>
+
+            <br>
+            <select name="JAPPAPTV">
+                <option value="">자빱 티비</option>
+                <option value="UGL">우정리 노트</option>
+                <option value="R">토깽뎐</option>
+                <option value="SF">자매꽃이 피었습니다</option>
+                <option value="SS">서리사막의 도둑들</option>
+                <option value="ST">양들이 잠드는 시간</option>
+                <option value="UGL2">우정리 노트2</option>
+            </select>
+
+            <br>
+            <br>
+            <select name="telecom">
+                <option value="aa" selected="selected">이동 통신사를 선택해주세요.</option>
+                <option value="sk">SKT</option>
+                <option value="kt">KTF</option>
+                <option value="lg">LG</option>
+                <option value="et">etc</option>
+            </select>
+
+            <br><br>
+            <!--textarea의 경우 name만 넣어주면 된다.
+            태그가 짝으로 이루어져 있기 때문에 그 사이에 value값을 넣어야 한다.
+            또한 그렇기 때문에 태그 사이의 공백이 유효하다.-->
+            <textarea name="content">감상평을 남겨 주세요.</textarea>
+
+            <br><br>
+            <button type="submit">저장</button>
+            <button type="reset">초기화</button>
+
+        </form>
+
+
+        <!--checkbox: 다중 선택, radio: 단일 선택-->
+        <!--label과 id를 이용해 같은 이름으로 묶어주면 링크된다.-->
+
+        <!--↓이미지 첨부 불가, 비추 태그-->
+        <!-- <input type="button" value="저장"> -->
+        <!--submit(전송 준비), form(영역 지정) 등: 화면상 변화는 없으나 데이터를 전송하고 받기 위한 준비-->
+
+
+    <!--ctrl+/: 한꺼번에 주석 처리, 한 번 더 누르면 풀린다.-->
+        <!-- <input type="text"> <br>
+        <input type="password"> <br>
+        <input type="file"> <br>
+        <input type="radio"> <br>
+        <input type="checkbox"> <br>
+        <input type="hidden">
+        <br>
+        <input type="color"> <br>
+        <input type="month"> <br>
+        <input type="number"> -->
+
+    </body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>홈페이지 2</title>
+
+    <!--  link 순서는 매우 중요하다. 위쪽부터 읽어 내려가기 때문에
+        먼저 오는 css를 적용했다가, 마지막에 오는 css에 다른 값이
+        들어가 있을 경우 그 값이 마지막으로 적용된다. 따라서 실제 페이지는
+        마지막에 링크한 스타일시트가 적용된 상태로 보이게 된다. -->
+        <link rel="stylesheet" href="./assets/css/mysite.css">
+        <link rel="stylesheet" href="./assets/css/board.css">
+    </head>
+
+    <body>
+
+        <div id="wrap">
+
+            <div id="header" class="clearfix">
+                <h1><a href="">Mysite</a></h1>
+                <ul class="clearfix">
+                    <li><a href="">로그인</a></li>
+                    <li><a href="">회원가입</a></li>
+                </ul>
+            </div>
+           
+            <div id="nav">
+                <ul class="clearfix">
+                    <li>입사지원서</li>
+                    <li>게시판</li>
+                    <li>갤러리</li>
+                    <li>방명록</li>
+                </ul>
+            </div>
+    
+            <!-- <contents> -->
+            <div id="contents2" class="clearfix">
+                <div id="aside" class="clearfix">
+                    <h2>게시판</h2>
+
+                    <ul>
+                        <li>일반 게시판</li>
+                        <li>댓글 게시판</li>
+                        <li>첨부 게시판</li>
+                    </ul>
+                </div>
+        
+                <div id="main">
+                    <div id="main-header" class="clearfix">
+                        <h3>일반 게시판</h3>
+                        <ul class="clearfix">
+                            <li>홈</li>
+                            <li>게시판</li>
+                            <li class="last">일반 게시판</li>
+                        </ul>
+                    </div>
+
+                    <div id="main-body">
+                          <table>
+                              <colgroup>
+                                  <col style="width: 50px;">
+                                  <col style="width: 450px;">
+                                  <col style="width: 100px;">
+                                  <col style="width: 100px;">
+                                  <col style="width: 100px;">
+                                  <col style="width: 100px;">
+                              </colgroup>
+
+                              <thead>
+                                  <tr>
+                                      <th>번호</th>
+                                      <th>제목</th>
+                                      <th>글쓴이</th>
+                                      <th>조회수</th>
+                                      <th>작성일</th>
+                                      <th>관리</th>
+                                  </tr>
+                              </thead>
+
+                              <tbody>
+                                  <tr>
+                                      <td>123</td>
+                                      <td>게시판 게시글입니다</td>
+                                      <td>정우성</td>
+                                      <td>1232</td>
+                                      <td>2021-11-03</td>
+                                      <td>삭제</td>
+                                  </tr>
+                                  <tr>
+                                      <td>123</td>
+                                      <td>게시판 게시글입니다</td>
+                                      <td>정우성</td>
+                                      <td>1232</td>
+                                      <td>2021-11-03</td>
+                                      <td>삭제</td>
+                                  </tr>
+                                  <tr>
+                                      <td>123</td>
+                                      <td>게시판 게시글입니다</td>
+                                      <td>정우성</td>
+                                      <td>1232</td>
+                                      <td>2021-11-03</td>
+                                      <td>삭제</td>
+                                  </tr>
+                                  <tr>
+                                      <td>123</td>
+                                      <td>게시판 게시글입니다</td>
+                                      <td>정우성</td>
+                                      <td>1232</td>
+                                      <td>2021-11-03</td>
+                                      <td>삭제</td>
+                                  </tr>
+                                  <tr>
+                                      <td>123</td>
+                                      <td>게시판 게시글입니다</td>
+                                      <td>정우성</td>
+                                      <td>1232</td>
+                                      <td>2021-11-03</td>
+                                      <td>삭제</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+            <!-- </contents> -->
+    
+            <div id="footer">
+                Copyright (c) 2021 황지우. All right reserved
+            </div>
+            
+        </div>
+        <!-- wrap -->
+
+    </body>
+</html>

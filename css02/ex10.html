@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .box-red {
+                width: 300px;
+                background-color: #ff0000;
+                /* margin: 10px; */
+
+                /* 하나의 마진값을 달리 주었을 경우, 정의되지 않은 테두리의 마진값은
+                기본값으로 적용된다. */
+                /* margin-top: 10px;
+                margin-right: 20px;
+                margin-bottom: 30px;
+                margin-left: 40px; */
+
+                /* 값을 4개 쓰면 시계방향으로 마진값이 적용된다. 
+                4개 테두리의 마진값을 각각 달리 주고 싶을 때 사용한다. */
+                margin: 10px 20px 30px 40px
+
+                /* 상하 좌우값이 각각 같을 경우에도 이 태그를 사용할 수 있다.
+                margin: 20px 50px */
+            }
+
+            /* ★margin은 좌우로는 합산으로 계산되지만, 상하로는 더 큰 값이 적용된다. 
+            상하 컨텐츠 간격이 각각의 마진값을 더한 값과 항상 같지 않다는 뜻이다.*/
+
+            .box-blue {
+                width: 300px;
+                background-color: #0000ff;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="box-red">
+            CSS에서 가장 보편적이고 많이 사용하는 마진과 패딩에 대한 값이
+            어떻게 작용하는지 알아 봅시다.
+        </div>
+
+        <div class="box-blue">
+            CSS에서 가장 보편적이고 많이 사용하는 마진과 패딩에 대한 값이
+            어떻게 작용하는지 알아 봅시다.
+        </div>
+
+    </body>
+
+</html>

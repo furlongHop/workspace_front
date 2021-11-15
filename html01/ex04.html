@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>html5</title>
+    </head>
+
+    <body>
+
+        <h3>목차</h3>
+        <ol>
+            <li><a href="./ex01.html" target="UGL2">hl~h6 태그</a></li>
+            <li><a href="./ex02.html" target="UGL2">p br hr strong em 태그</a></li>
+            <li><a href="ex03.html" target="UGL2">ol ul</a></li>
+            <li><a href="ex04.html" target="UGL2">a img 태그</a></li>
+            <li><a href="ex05.html" target="UGL2">table tr td 태그</a></li>
+            <li><a href="ex06.html" target="UGL2">colspan rowspan 태그</a></li>
+            <li><a href="ex07.html" target="UGL2">thead tbody tfoot 태그</a></li>
+        </ol>
+
+        <h1>html 기본 태그</h1>
+        <h2>4. a img 태그</h2>
+
+        <!--절대 경로-->
+         <img src="C:\javaStudy\workspace_front\html01\img\jung.jpg">
+        <!--위치 중 C:는 생략 가능-->
+        <br><img src="\javaStudy/workspace_front/html01/img/yoo.jpg">
+
+        <!--01.html5 19장 참조-->
+        <img src="./img/yoo.jpg" width="200px" height="300px">
+        <img src="img/yoo.jpg" width="200px" height="300px">
+        <!--(./) 내 위치(사진을 필요로 하는 파일)부터 시작. 혹은 생략. 슬래시는 폴더 안-->
+        <!--상대 경로: (폴더 위치 파악)/이미지가 들어있는 폴더 이름/이미지 이름-->
+        <!--현재 파일보다 하위 폴더: 생략 혹은 ./, 상위 폴더: ../-->
+
+        <br><img src="../upimg/구르미_컴퓨터_배경2.jpg" width="500px" height="300px" alt="구르미 컴퓨터 배경 화면">
+        <!--(../)내 위치보다 더 위에 있는 폴더에 이미지가 있을 경우 사용(상대 경로)-->
+        <!--alt: 이미지가 깨졌을 경우 깨진 이미지를 설명해주는 글-->
+
+        <br>
+        <a href="C:\javaStudy\workspace_front\html01\ex01.html" target="veiw">1번 문서로 이동하시겠습니까?</a>
+
+        <br>
+        <a href="./ex02.html" target="veiw">2번 문서로 이동하시겠습니까?</a>
+        <!--target뒤에 _blank를 붙이면 새창에서 열리고, _self를 붙이면 현재 창에서 이동한다.-->
+        <!--이동 링크 태그를 달 경우 target 뒤에 창 이름을 임의로 지어 넣을 경우, 
+        같은 이름을 가진 창을 타겟으로 둔 링크들은 모두 그 창에서 열린다. 새 창 생성X-->
+
+        <br>
+            <a href="https://www.daum.net/" target="_blank">
+                <img src="https://blog.kakaocdn.net/dn/yElzG/btqw7QZODLs/iA6TBn80hto4lndolDKB00/img.jpg"
+                width="330px" height="200px">
+            </a>
+
+    </body>
+
+</html>

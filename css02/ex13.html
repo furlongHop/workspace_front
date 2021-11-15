@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        
+        <style>
+
+            /* bullet(불릿): 텍스트 앞에 주의를 끌기 위해 붙이는 그래픽 문자. 모든 장식 무늬 포함. */
+
+            /* list로서 붙는 넘버링은 블릿이라 영역을 차지하는 컨텐츠로 인식하지 않는다.
+            따라서 그대로 li에 float를 줄 경우 블릿 공간에 다음 컨텐츠가 겹쳐 지저분해진다.
+            그래서 ol에 붙은 넘버링을 list-style-type 으로 none 설정으로 바꿔주었다. */
+            ol {list-style-type: none;}
+
+            ol>li {
+                /* list를 오른쪽으로 보내고 싶다고 해서 float: right;를 주면 첫 번째 리스트부터
+                오른쪽에 쌓이기 때문에 순서가 역순이 된다. 통째로 오른쪽으로 보내고 싶다면 주의. */
+                /* 글자, 예를 들어 문단 <p> 같은 경우에는 물처럼 흐르는 성질이 있어서, float를 넣을 경우
+                위에 뜬 컨텐츠와 겹치지 않고 옆으로 흘러간다. 위 컨텐츠와 겹치게 하고 싶을 경우에는
+                position이라는 속성을 사용한다. */
+                float: left;
+                margin: 4px 4px;
+
+                background-image: url(./img/star.jpg);
+                background-repeat: no-repeat;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <ol>
+            <li>메뉴(1)</li>
+            <li>메뉴(2)</li>
+            <li>메뉴(3)</li>
+            <li>메뉴(4)</li>
+            <li>메뉴(5)</li>
+        </ol>
+
+    </body>
+
+</html>

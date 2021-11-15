@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        
+        <style>
+            .save {
+                border-width: 2px;
+                border-style: solid;
+                border-color: #818181;
+                background-color: #cfcfcf;
+
+                width: 80px;
+                border-radius: 5px;
+                text-align: center;
+
+                cursor: pointer;
+            }
+
+            .delete {
+                border-width: 2px;
+                border-style: solid;
+                border-color: #ff9393;
+                background-color: #ffa6a6;
+
+                width: 80px;
+                border-radius: 5px;
+                text-align: center;
+
+                cursor: pointer;
+            }
+
+            .modify {
+                border-width: 2px;
+                border-style: solid;
+                border-color: #5cd9ff;
+                background-color: #9ae2ff;
+
+                width: 80px;
+                border-radius: 5px;
+                text-align: center;
+
+                cursor: pointer;
+            }
+
+            button.save:hover {background-color: #dfdfdf;}
+            button.delete:hover {background-color: #ffbcbc;}
+            button.modify:hover {background-color: #bfedff;}
+
+            div {
+                width: 100px;
+                padding: 5px 5px;
+                background-color: #cfcfcf;
+                border: 2px solid #818181;
+                border-radius: 5px;
+                text-align: center;
+            }
+
+            #delete {
+                width: 100px;
+                height: 50px;
+                background-color: #ffa6a6;
+                border: 2px solid #ff9393;
+                border-radius: 5px;
+                text-align: center;
+
+                /* vertical-align(수직 정렬)은 inline 형식이나 table 형식에서만 사용 가능하다.
+                따라서 이 태그를 사용하기 위해 display로 table 속성을 주었다. */
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .btn-login {
+                display: inline-block;
+                width: 100px;
+                height: 50px;
+
+                border: 1px solid #000000;
+                background-color: #ffa6a6;
+                border-radius: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form action="" method="get">
+
+        <!-- button은 inline-block 형식이다.
+        form 태그는 inline-block 형식일 가능성이 높다. -->
+        <button type="submit" class="save">저장버튼</button><br>
+        <button type="submit" class="delete">삭제버튼</button><br>
+        <button type="submit" class="modify">수정버튼</button>
+
+        </form>
+
+        <br>
+
+        <div>저장버튼</div>
+
+        <br>
+
+        <div id="delete">삭제버튼</div><br>
+
+        <a class="btn-login" href="https://www.naver.com/">로그인</a>
+
+    </body>
+
+</html>
